@@ -1,23 +1,39 @@
 body {
-    background : #464646;
+    background : #dcebb47c;
     display : flex;
     align-items: center;
     justify-content: center;
     height:100vh;
     flex-direction: column;
+    
+}
+h1{
+    color:rgb(73, 95, 95);
+    font-size:50px;
+    padding-bottom:50px;
+}
+.messagebox {
+    justify-content: space-between;
+    height:30px;
+    font-size: 14pt;
+}
+#textbox{
+    width: 500px;
+}
+.button{
+    height:39px;
 }
 .switch{
     position:relative;
     width:200px;
     height:50px;
-    border-radius: 25px;
+    top:30px;
 }
 .switch input{
     appearance: none;
     width:200px;
     height:50px;
-    border-radius: 25px;
-    background: #1E1E1E;
+    background: White;
     outline:none;
 }
 .switch input::before,
@@ -29,22 +45,21 @@ body {
     font-weight: bolder;
 }
 .switch input::before{
-    content:"ON";
-    left:20px;
+    content:"Bugs";
+    left:37px;
 }
 .switch input::after{
-    content:"OFF";
-    right:20px;
+    content:"Suggestion";
+    right:14px;
 }
 .switch input:checked{
-    background: #ff9800; 
+    background: Grey; 
 }
 .switch label{
     z-index: 1;
     position: absolute;
     top:10px;
     bottom: 4px;
-    border-radius: 20px;
 }
 .switch input{
     transition: 0.25s;
@@ -75,6 +90,6 @@ body {
 .switch input:not(:checked)+label{
     left:100px;
     right:4px;
-    background: #ff9800;
+    background: gainsboro;
     transition: left 0.4s 0.2s , right 0.5s , background 0.35s;
 }
